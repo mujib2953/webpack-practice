@@ -1,4 +1,6 @@
-class AlertService {
+import { inputsAreValid } from "./utils/inputs-are-valid";
+
+export class AlertService {
     constructor() {
         this.errorBox = document.getElementById("error");
     }
@@ -10,9 +12,9 @@ class AlertService {
             } else {
                 return message + `${str} is not a number.`;
             }
-        }, "Please enter two valid numbers!! ");
+        }, "Please enter two valid numbers!! \n");
     
-        showError(fullMessage);
+        this.showError(fullMessage);
     }
 
     hideError() {
