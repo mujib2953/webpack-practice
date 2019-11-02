@@ -18,6 +18,12 @@ module.exports = {
                     "sass-loader",  // --- 1. Convert scss to css
                 ]
             },
+            {
+                test: /\.html$/,
+                use: [
+                    "html-loader"
+                ]
+            }
         ]
     }
 };
