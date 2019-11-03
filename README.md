@@ -1,5 +1,4 @@
 ### Webpack Parctice
-====================
 
 Just playing around the webpack. With its loaders, plugins and different files.
 Since it is the basic of ever new modern web applicaton. Every modern web application requires bundling and managing different files and tarnspiler.
@@ -7,30 +6,28 @@ Since it is the basic of ever new modern web applicaton. Every modern web applic
 Webapck is most widely used bundler in the industry. It has huge community support.
 
 ##### Used packages/plugins in this repos:
-==========================================
-	• webpack 
-	• webpack-cli
-	• css-loader
-	• style-loader
-	• sass-loader
-	• node-sass
-	• webpack-merge
-	• webpack-dev-server
-	• html-loader
-	• file-loader
-	• clean-webpack-plugin
-	• html-webpack-plugin
-	• mini-css-extract-plugin
-	• optimize-css-assets-webpack-plugin
-	• ts-loader
-    • typescript
-    • Bootstrap
-    • jquery
-	• popper.js
+	- webpack 
+	- webpack-cli
+	- css-loader
+	- style-loader
+	- sass-loader
+	- node-sass
+	- webpack-merge
+	- webpack-dev-server
+	- html-loader
+	- file-loader
+	- clean-webpack-plugin
+	- html-webpack-plugin
+	- mini-css-extract-plugin
+	- optimize-css-assets-webpack-plugin
+	- ts-loader
+    - typescript
+    - Bootstrap
+    - jquery
+	- popper.js
 	
 
 ##### Following things I have did from beginning till now +_+
-================================================================
 1. Added `webpack` & `webpack-cli` package which are responsible for the bundling the application
 2. Created `webpack.config.js` file with 2 properties i.e. `entry` & `output`
 3. By default webpack search entry point as `./src/index.js`
@@ -66,7 +63,6 @@ Webapck is most widely used bundler in the industry. It has huge community suppo
 
 
 ##### Alternative to `webpacks`
-===================================
 1. Parcel
 2. RollUp
 
