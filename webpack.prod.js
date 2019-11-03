@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const OptimizeCssAssetsWebpackPlugin = require("optimize-css-assets-webpack-plugin");
 
 const common = require("./webpack.common");
 
@@ -15,6 +16,7 @@ module.exports = merge(common, {
     },
     optimization: {
         minimizer: [
+            new OptimizeCssAssetsWebpackPlugin(),
             new TerserPlugin(),
             new HtmlWebpackPlugin({
                 template: "./src/template.html",
@@ -37,7 +39,7 @@ module.exports = merge(common, {
             {
                 test: /\.scss$/,
                 use: [
-                    "style-loader", // --- 2. inject the commonJS to HTML
+                    MiniCssExtractPlugin.loader, // --- 2. inject the commonJS to HTML
                     "css-loader",   // --- 1. Change css to commonJS
                     "sass-loader",  // --- 1. Convert scss to css
                 ]
