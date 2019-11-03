@@ -1,7 +1,9 @@
 import { parseInputs } from "./utils/parse-inputs";
 import { inputsAreValid } from "./utils/inputs-are-valid";
+import { log } from "./utils/logger";
 
 export const run = (alertService, componentService) => {
+    log("app.js :: run method is invoked.");
     alertService.hideError();
 
     componentService.onClick(() => {
